@@ -1,0 +1,115 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "username": "arjun_dev",
+      "profilePic": "https://i.pravatar.cc/150?img=11",
+      "postImage": "https://picsum.photos/id/1011/600/600",
+      "caption": "Morning ride vibes 🚴",
+      "likes": 245,
+      "time": "2 hours ago",
+      "comments": [
+        { "user": "rahul", "text": "Nice shot!" },
+        { "user": "karthik", "text": "Where is this?" }
+      ]
+    },
+    {
+      "id": 2,
+      "username": "meena_art",
+      "profilePic": "https://i.pravatar.cc/150?img=5",
+      "postImage": "https://picsum.photos/id/1025/600/600",
+      "caption": "Sketching practice today ✏️",
+      "likes": 310,
+      "time": "5 hours ago",
+      "comments": [
+        { "user": "sanjay", "text": "Awesome work!" }
+      ]
+    },
+    {
+      "id": 3,
+      "username": "vijay_fit",
+      "profilePic": "https://i.pravatar.cc/150?img=14",
+      "postImage": "https://picsum.photos/id/1005/600/600",
+      "caption": "Workout done 💪",
+      "likes": 520,
+      "time": "6 hours ago",
+      "comments": []
+    },
+    {
+      "id": 4,
+      "username": "kaviya_travel",
+      "profilePic": "https://i.pravatar.cc/150?img=32",
+      "postImage": "https://picsum.photos/id/1016/600/600",
+      "caption": "Beach sunset 🌅",
+      "likes": 890,
+      "time": "8 hours ago",
+      "comments": [
+        { "user": "hari", "text": "Beautiful view!" }
+      ]
+    },
+    {
+      "id": 5,
+      "username": "tech_suresh",
+      "profilePic": "https://i.pravatar.cc/150?img=21",
+      "postImage": "https://picsum.photos/id/180/600/600",
+      "caption": "Working on React project 🚀",
+      "likes": 120,
+      "time": "10 hours ago",
+      "comments": []
+    },
+    {
+      "id": 6,
+      "username": "anjali_foodie",
+      "profilePic": "https://i.pravatar.cc/150?img=44",
+      "postImage": "https://picsum.photos/id/1080/600/600",
+      "caption": "Dinner time 🍝",
+      "likes": 650,
+      "time": "12 hours ago",
+      "comments": [
+        { "user": "priya", "text": "Looks tasty!" }
+      ]
+    },
+    {
+      "id": 7,
+      "username": "rahul_clicks",
+      "profilePic": "https://i.pravatar.cc/150?img=17",
+      "postImage": "https://picsum.photos/id/1043/600/600",
+      "caption": "Street photography 📷",
+      "likes": 420,
+      "time": "14 hours ago",
+      "comments": []
+    },
+    {
+      "id": 8,
+      "username": "deepa_design",
+      "profilePic": "https://i.pravatar.cc/150?img=29",
+      "postImage": "https://picsum.photos/id/1059/600/600",
+      "caption": "UI inspiration today 🎨",
+      "likes": 270,
+      "time": "16 hours ago",
+      "comments": []
+    },
+    {
+      "id": 9,
+      "username": "manoj_music",
+      "profilePic": "https://i.pravatar.cc/150?img=9",
+      "postImage": "https://picsum.photos/id/1062/600/600",
+      "caption": "Late night jam 🎸",
+      "likes": 510,
+      "time": "18 hours ago",
+      "comments": [
+        { "user": "vicky", "text": "Rock on!" }
+      ]
+    },
+    {
+      "id": 10,
+      "username": "nisha_daily",
+      "profilePic": "https://i.pravatar.cc/150?img=48",
+      "postImage": "https://picsum.photos/id/1074/600/600",
+      "caption": "Coffee first ☕",
+      "likes": 300,
+      "time": "20 hours ago",
+      "comments": []
+    }
+  ]
+}

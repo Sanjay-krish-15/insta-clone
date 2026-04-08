@@ -1,0 +1,23 @@
+.logo-text{
+    width: 100px
+}
+
+.bi{
+    margin: 0 10px 0 0;
+    
+}
+
+.story{
+    width: 100%;
+    height: 60px;
+    background-color: #eee;
+    margin-bottom: 20px;
+}
+
+.label {
+  display: none;
+}
+
+.menu-item:hover .label {
+  display: inline;
+}
