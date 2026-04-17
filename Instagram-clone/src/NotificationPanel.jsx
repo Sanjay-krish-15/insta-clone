@@ -13,12 +13,9 @@ function NotificationPanel({ isOpen, closePanel }) {
       "https://gist.githubusercontent.com/Sanjay-krish-15/03d8ced30e80ac1a7d5f509ea56ba000/raw/f13bccab60ec6612c85c7b2d98b53e537ac4f5f8/db.json"
     )
       .then((res) => res.json())
-      .then((data) => {
-
-        // FOLLOW REQUESTS
+      .then((data) => {       
         setFollowRequests(data.posts);
-
-        // COMMENT MENTIONS
+        
         const commentMentions = [];
 
         data.posts.forEach((post) => {
@@ -36,8 +33,7 @@ function NotificationPanel({ isOpen, closePanel }) {
         });
 
         setMentions(commentMentions);
-
-        // DM ALERTS
+       
         setDmAlerts(data.messages);
 
       });
@@ -47,7 +43,7 @@ function NotificationPanel({ isOpen, closePanel }) {
   return (
     <div className={`notification-panel  ${isOpen ? "open" : ""}`}>
 
-      {/* HEADER */}
+    
       <div className="panel-header">
 
         <h4>Notifications</h4>
@@ -56,10 +52,10 @@ function NotificationPanel({ isOpen, closePanel }) {
 
       </div>
 
-      {/* BODY */}
+     
       <div className="panel-body">
 
-        {/* FOLLOW REQUESTS */}
+       
         <h5>Follow Requests</h5>
 
         {followRequests.map((user) => (
@@ -103,8 +99,7 @@ function NotificationPanel({ isOpen, closePanel }) {
           </div>
 
         ))}
-
-        {/* COMMENT MENTIONS */}
+        
         <h5>Mentions</h5>
 
         {mentions.map((item, index) => (
@@ -122,8 +117,7 @@ function NotificationPanel({ isOpen, closePanel }) {
           </div>
 
         ))}
-
-        {/* DM ALERTS */}
+        
         <h5>Messages</h5>
 
         {dmAlerts.map((msg) => (
@@ -141,8 +135,7 @@ function NotificationPanel({ isOpen, closePanel }) {
           </div>
 
         ))}
-
-        {/* MONTHLY SUMMARY */}
+       
         <div className="monthly-summary">
 
           <h5>This Month</h5>
