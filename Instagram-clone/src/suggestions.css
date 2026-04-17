@@ -1,0 +1,66 @@
+.suggestions {
+  width: 300px;
+  padding: 15px;
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+/* HEADER */
+.suggestions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.suggestions-title {
+  font-weight: bold;
+  color: gray;
+  font-size: 14px;
+}
+
+.see-all {
+  color: #0095f6;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+/* USER ROW */
+.suggestion-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+/* LEFT SIDE */
+.suggestion-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* IMAGE */
+.suggestion-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* NAME */
+.suggestion-name {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* FOLLOW BUTTON */
+.follow-button {
+  background-color: transparent;
+  border: none;
+  color: #0095f6;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 13px;
+}

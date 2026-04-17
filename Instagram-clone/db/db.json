@@ -111,5 +111,290 @@
       "time": "20 hours ago",
       "comments": []
     }
+  ],
+
+  "suggestions": [
+    {
+      "id": 1,
+      "username": "arjun_dev",
+      "profilePic": "https://i.pravatar.cc/150?img=11"
+    },
+    {
+      "id": 2,
+      "username": "meena_art",
+      "profilePic": "https://i.pravatar.cc/150?img=5"
+    },
+    {
+      "id": 3,
+      "username": "vijay_fit",
+      "profilePic": "https://i.pravatar.cc/150?img=14"
+    },
+    {
+      "id": 4,
+      "username": "kaviya_travel",
+      "profilePic": "https://i.pravatar.cc/150?img=32"
+    },
+    {
+      "id": 5,
+      "username": "tech_suresh",
+      "profilePic": "https://i.pravatar.cc/150?img=21"
+    }
+  ],
+
+  "explore": [
+  {
+    "id": 1,
+    "image": "https://picsum.photos/id/1015/400/400"
+  },
+  {
+    "id": 2,
+    "image": "https://picsum.photos/id/1016/400/400"
+  },
+  {
+    "id": 3,
+    "image": "https://picsum.photos/id/1018/400/400"
+  },
+  {
+    "id": 4,
+    "image": "https://picsum.photos/id/1020/400/400"
+  },
+  {
+    "id": 5,
+    "image": "https://picsum.photos/id/1024/400/400"
+  },
+  {
+    "id": 6,
+    "image": "https://picsum.photos/id/1025/400/400"
+  },
+  {
+    "id": 7,
+    "image": "https://picsum.photos/id/1027/400/400"
+  },
+  {
+    "id": 8,
+    "image": "https://picsum.photos/id/1031/400/400"
+  },
+  {
+    "id": 9,
+    "image": "https://picsum.photos/id/1033/400/400"
+  },
+  {
+    "id": 10,
+    "image": "https://picsum.photos/id/1035/400/400"
+  },
+  {
+    "id": 11,
+    "image": "https://picsum.photos/id/1036/400/400"
+  },
+  {
+    "id": 12,
+    "image": "https://picsum.photos/id/1037/400/400"
+  },
+  {
+    "id": 13,
+    "image": "https://picsum.photos/id/1038/400/400"
+  },
+  {
+    "id": 14,
+    "image": "https://picsum.photos/id/1039/400/400"
+  },
+  {
+    "id": 15,
+    "image": "https://picsum.photos/id/1040/400/400"
+  },
+  {
+    "id": 16,
+    "image": "https://picsum.photos/id/1041/400/400"
+  },
+  {
+    "id": 17,
+    "image": "https://picsum.photos/id/1042/400/400"
+  },
+  {
+    "id": 18,
+    "image": "https://picsum.photos/id/1043/400/400"
+  },
+  {
+    "id": 19,
+    "image": "https://picsum.photos/id/1044/400/400"
+  },
+  {
+    "id": 20,
+    "image": "https://picsum.photos/id/1045/400/400"
+  }
+],
+
+  "messages": [
+  {
+    "id": 1,
+    "username": "arjun_dev",
+    "profilePic": "https://i.pravatar.cc/150?img=11",
+    "lastMessage": "Hey, how are you?",
+    "time": "2 hours ago"
+  },
+  {
+    "id": 2,
+    "username": "meena_art",
+    "profilePic": "https://i.pravatar.cc/150?img=5",
+    "lastMessage": "Loved your latest post!",
+    "time": "5 hours ago"
+  },
+  {
+    "id": 3,
+    "username": "vijay_fit",
+    "profilePic": "https://i.pravatar.cc/150?img=14",
+    "lastMessage": "Wanna hit the gym together?",
+    "time": "6 hours ago"
+  },
+  {
+    "id": 4,
+    "username": "kaviya_travel",
+    "profilePic": "https://i.pravatar.cc/150?img=32",
+    "lastMessage": "Check out this travel blog!",
+    "time": "8 hours ago"
+  },
+  {
+    "id": 5,
+    "username": "tech_suresh",
+    "profilePic": "https://i.pravatar.cc/150?img=21",
+    "lastMessage": "Need help with React.",
+    "time": "10 hours ago"
+  },
+  {   
+    "id": 6,
+    "username": "anjali_foodie",
+    "profilePic": "https://i.pravatar.cc/150?img=44",
+    "lastMessage": "Let's try that new restaurant!",
+    "time": "12 hours ago"
+  },
+  {  
+    "id": 7,
+    "username": "rahul_clicks",
+    "profilePic": "https://i.pravatar.cc/150?img=17",
+    "lastMessage": "Got some new camera gear.",
+    "time": "14 hours ago"
+  },
+  {   
+    "id": 8,
+    "username": "deepa_design",
+    "profilePic": "https://i.pravatar.cc/150?img=29",
+    "lastMessage": "Can you review my design?",
+    "time": "16 hours ago"
+  },
+  {   
+    "id": 9,
+    "username": "manoj_music",
+    "profilePic": "https://i.pravatar.cc/150?img=9",
+    "lastMessage": "Check out this new song!",
+    "time": "18 hours ago"
+  }
+    ,
+    {   
+      "id": 10,
+      "username": "nisha_daily",
+      "profilePic": "https://i.pravatar.cc/150?img=48",
+      "lastMessage": "Morning coffee plans?",
+      "time": "20 hours ago"
+    }
+],
+
+
+  "notifications": [
+    {
+      "id": 1,
+      "type": "follow_request",
+      "username": "arjun_dev",
+      "profilePic": "https://i.pravatar.cc/150?img=11",
+      "message": "requested to follow you",
+      "time": "2 days ago",
+      "status": "pending"
+    },
+
+    {
+      "id": 2,
+      "type": "follow_request",
+      "username": "meena_art",
+      "profilePic": "https://i.pravatar.cc/150?img=5",
+      "message": "requested to follow you",
+      "time": "5 days ago",
+      "status": "pending"
+    },
+
+    {
+      "id": 3,
+      "type": "comment_mention",
+      "username": "rahul_clicks",
+      "profilePic": "https://i.pravatar.cc/150?img=17",
+      "message": "mentioned you in a comment",
+      "postId": 7,
+      "time": "3 hours ago"
+    },
+
+    {
+      "id": 4,
+      "type": "tag_mention",
+      "username": "kaviya_travel",
+      "profilePic": "https://i.pravatar.cc/150?img=32",
+      "message": "tagged you in a post",
+      "postId": 4,
+      "time": "1 day ago"
+    },
+
+    {
+      "id": 5,
+      "type": "dm_alert",
+      "username": "tech_suresh",
+      "profilePic": "https://i.pravatar.cc/150?img=21",
+      "message": "Please check DM",
+      "time": "10 hours ago"
+    },
+
+    {
+      "id": 6,
+      "type": "dm_alert",
+      "username": "anjali_foodie",
+      "profilePic": "https://i.pravatar.cc/150?img=44",
+      "message": "sent you a message",
+      "time": "12 hours ago"
+    },
+    
+    {
+      "id": 7,
+      "type": "comment_mention",
+      "username": "deepa_design",
+      "profilePic": "https://i.pravatar.cc/150?img=29",
+      "message": "mentioned you in a comment",
+      "postId": 8,
+      "time": "4 hours ago"
+    },
+
+    {
+      "id": 8,
+      "type": "tag_mention",
+      "username": "manoj_music",
+      "profilePic": "https://i.pravatar.cc/150?img=9",
+      "message": "tagged you in a post",
+      "postId": 9,
+      "time": "2 days ago"
+    },
+
+    {
+      "id": 9,
+      "type": "follow_request",
+      "username": "nisha_daily",
+      "profilePic": "https://i.pravatar.cc/150?img=48",
+      "message": "requested to follow you",
+      "time": "1 day ago",
+      "status": "pending"
+    },
+      {
+        "id": 10,
+        "type": "dm_alert",
+        "username": "vijay_fit",
+        "profilePic": "https://i.pravatar.cc/150?img=14",
+        "message": "sent you a message",
+        "time": "6 hours ago"
+      }
   ]
 }
+

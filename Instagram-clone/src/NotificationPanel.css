@@ -1,0 +1,124 @@
+.notification-panel {
+
+  position: fixed;
+
+  left: -400px;
+
+  top: 0;
+
+  width: 380px;
+
+  height: 100vh;
+
+  background: white;
+
+  box-shadow: -3px 0px 10px rgba(0,0,0,0.2);
+
+  transition: 0.3s ease;
+
+  z-index: 999;
+
+  overflow-y: auto;
+
+}
+
+.notification-panel.open {
+
+  left: 0;
+
+}
+
+.panel-header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  padding: 15px;
+
+  border-bottom: 1px solid #ddd;
+
+}
+
+.panel-body {
+
+  padding: 15px;
+
+  overflow-y: auto;
+
+}
+
+.notification-card {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  border-bottom: 1px solid #eee;
+
+  padding: 10px 0;
+
+}
+
+.notification-left {
+
+  display: flex;
+
+  gap: 10px;
+
+  align-items: center;
+
+}
+
+.profile-pic {
+
+  width: 20px;
+
+  height: 20px;
+
+  border-radius: 50%;
+
+}
+
+.confirm-btn {
+
+  background: #0095f6;
+
+  border: none;
+
+  color: white;
+
+  padding: 3px 8px;
+
+  border-radius: 5px;
+
+  margin-right: 5px;
+
+
+}
+
+.delete-btn {
+
+  background: #eee;
+
+  border: none;
+
+  padding: 3px 8px;
+
+  border-radius: 5px;
+
+}
+
+.monthly-summary {
+
+  background: #fafafa;
+
+  padding: 10px;
+
+  margin-top: 20px;
+
+  border-radius: 8px;
+
+}

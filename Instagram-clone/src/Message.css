@@ -1,0 +1,163 @@
+.messages-page {
+  display: flex;
+  height: 100vh;
+  background: none;
+  color: white;
+}
+
+
+.messages-sidebar {
+  width: 350px;
+  border-right: 1px solid #573e3e;
+  padding: 20px;
+ 
+}
+
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.edit-icon {
+  cursor: pointer;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 10px;
+  border: none;
+  background:none;
+  color: black;
+}
+
+
+.stories-row {
+  display: flex;
+  gap: 20px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  margin-top: 20px;
+ 
+  
+}
+
+.stories-row:hover {
+  overflow-x: auto;
+}
+
+.story {
+  text-align: center;
+  color: #000;
+  font-size: x-small;
+  background-color: white;
+
+}
+
+
+.story img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+    
+}
+
+
+.messages-title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  color: #000;
+  font-size: small;
+  
+}
+
+
+.message-item {
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+  cursor: pointer;
+}
+
+
+.profile-pic {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+
+
+.message-info {
+  margin-left: 12px;
+}
+
+
+.username {
+  font-weight: bold;
+  color: #000;
+}
+
+
+.last-message {
+  font-size: 13px;
+  color: gray;
+  display: flex;
+  align-items: center;
+
+}
+
+.unread-dot {
+  width: 10px;
+  height: 10px;
+  background: #3797f0;
+  border-radius: 50%;
+  margin-left: auto;
+}
+
+
+.messages-chat-area {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.chat-placeholder {
+  text-align: center;
+}
+
+
+.chat-icon {
+  font-size: 60px;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 20px;
+  display: inline-block;
+}
+
+
+.send-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #3797f0;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.messages-list{
+  max-height: 400px;
+  overflow-y: hidden;
+}
+
+.messages-list:hover {
+  overflow-y: auto;
+  
+}   

@@ -1,42 +1,3 @@
-/* import React, { useEffect } from 'react'
-
-function Posts() {
-
-    const [posts, setPosts] = React.useState([]);
-    useEffect(() => {
-        fetch('http://localhost:3001/posts')
-            .then(response => response.json())
-            .then(data => setPosts(data))
-            .catch(error => console.error('Error fetching posts:', error));
-    }
-        , [])
-        
-    
-  return (
-    <div>
-        {posts.length>0?(
-            <div>
-                {posts.map((post) => (
-                    <div key={post.id}>
-                        <h3>{post.title}</h3>
-                        <img className="rounded-circle" src={post.profilepic} alt={post.title} style={{ width: '10%' }} />
-                    </div>
-                ))}
-            </div>
-        ):(
-            <div>
-                Loading Posts
-            </div>
-        )}
-    </div>
-
-       
-  )
-}
-
-export default Posts */
-
-
 import React, { useEffect, useState } from "react";
 
 function Posts() {
@@ -44,9 +5,9 @@ function Posts() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/posts")
+    fetch("https://gist.githubusercontent.com/Sanjay-krish-15/03d8ced30e80ac1a7d5f509ea56ba000/raw/f13bccab60ec6612c85c7b2d98b53e537ac4f5f8/db.json")
       .then((response) => response.json())
-      .then((data) => setPosts(data))
+      .then((data) => setPosts(data.posts))
       .catch((error) => console.error("Error fetching posts:", error));
   }, []);
 
