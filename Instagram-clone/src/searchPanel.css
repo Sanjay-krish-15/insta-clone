@@ -11,7 +11,6 @@
 }
 
 
-/* Search input styling */
 
 .search-input {
 
@@ -34,7 +33,6 @@
 }
 
 
-/* Highlight effect when clicked */
 
 .search-input:focus {
 
@@ -43,7 +41,6 @@
 }
 
 
-/* Dropdown results */
 
 .search-results {
 
@@ -66,7 +63,6 @@
 }
 
 
-/* Each username result */
 
 .search-result-item {
 
