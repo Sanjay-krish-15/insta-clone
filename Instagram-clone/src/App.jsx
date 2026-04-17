@@ -27,8 +27,7 @@ function App() {
 
   return (
     <div className="d-flex vh-100">
-
-      {/* Sidebar always visible */}
+      
       <div style={{ width: "10%" }}>
         <Sidebar />
       </div>
@@ -60,19 +59,9 @@ function App() {
         </Routes>
       </div>
 
-
-      {/* Suggestions Panel */}
-      {!isExplorePage &&
-        !isProfilePage &&
-        !isMessagesPage &&
-        !isReelsPage && (
-          <div
-            style={{
-              width: "20%",
-              alignContent: "center",
-              padding: "20px",
-            }}
-          >
+      
+      {!isExplorePage && !isProfilePage && !isMessagesPage && !isReelsPage && (
+          <div style={{ width: "20%",alignContent: "center",padding: "20px",}}>
             <Suggestions />
           </div>
         )}
