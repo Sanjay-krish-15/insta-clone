@@ -17,10 +17,10 @@ function Profile() {
 
     <div className="container-fluid px-3 px-md-5 mt-4">
 
-      {/* PROFILE HEADER */}
+  
       <div className="row align-items-center text-center text-md-start">
 
-        {/* PROFILE IMAGE */}
+      
         <div className="col-12 col-md-4 mb-3 mb-md-0 text-center">
 
           <img
@@ -32,10 +32,10 @@ function Profile() {
         </div>
 
 
-        {/* PROFILE DETAILS */}
+      
         <div className="col-12 col-md-8">
 
-          {/* USERNAME */}
+      
           <div className="d-flex align-items-center justify-content-center justify-content-md-start gap-3">
 
             <h5 className="mb-0">{user.username}</h5>
@@ -45,7 +45,7 @@ function Profile() {
           </div>
 
 
-          {/* STATS */}
+     
           <div className="d-flex flex-wrap justify-content-center justify-content-md-start gap-4 mt-3">
 
             <span><b>{user.posts}</b> posts</span>
@@ -57,7 +57,7 @@ function Profile() {
           </div>
 
 
-          {/* NAME */}
+        
           <div className="mt-3 fw-bold">
 
             {user.name}
@@ -65,7 +65,7 @@ function Profile() {
           </div>
 
 
-          {/* BIO */}
+     
           <div className="text-secondary">
 
             {user.bio}
@@ -73,7 +73,7 @@ function Profile() {
           </div>
 
 
-          {/* BUTTONS */}
+      
           <div className="mt-3 d-flex flex-column flex-md-row gap-3 justify-content-center justify-content-md-start">
 
             <button className="btn btn-dark px-4">
@@ -95,7 +95,7 @@ function Profile() {
       </div>
 
 
-      {/* HIGHLIGHTS */}
+     
       <div className="mt-5 mb-5 d-flex justify-content-center justify-content-md-start">
 
         <div className="text-center">
@@ -117,7 +117,7 @@ function Profile() {
       </div>
 
 
-      {/* TAB SECTION */}
+   
       <div className="profile-tabs d-flex justify-content-center gap-3 gap-md-5 pt-2 pb-2 flex-wrap">
 
         <i className="bi bi-grid-3x3 fs-3"></i>
@@ -131,7 +131,6 @@ function Profile() {
       </div>
 
 
-      {/* EMPTY STATE */}
       <div className="text-center mt-5">
 
         <div className="camera-circle mx-auto">
@@ -159,7 +158,7 @@ function Profile() {
         </p>
 
 
-        {/* FOOTER LINKS */}
+  
         <div className="d-flex flex-wrap justify-content-center gap-3 mt-5">
 
           <span className="base-text">Meta</span>
