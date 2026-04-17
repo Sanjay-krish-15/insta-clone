@@ -24,7 +24,7 @@ function Posts() {
               backgroundColor: "white"
             }}
           >
-            {/* Header */}
+           
             <div
               style={{
                 display: "flex",
@@ -42,14 +42,14 @@ function Posts() {
               <strong>{post.username}</strong>
             </div>
 
-            {/* Post Image */}
+         
             <img
               src={post.postImage}
               alt="post"
               style={{ width: "100%" }}
             />
 
-            {/* Actions */}
+        
             <div style={{ padding: "10px" }}>
               <i className="bi bi-heart"></i> <i className="bi bi-chat"></i> <i className="bi bi-send"></i>
 
