@@ -27,21 +27,20 @@ const Messages = () => {
   return (
     <div className="messages-page">
 
-      {/* LEFT PANEL */}
-      <div className="messages-sidebar">
+       <div className="messages-sidebar">
 
         <div className="sidebar-header">
           <h3>.sanjay.krish.</h3>
         </div>
 
-        {/* SEARCH */}
+        
         <input
           type="text"
           placeholder="Search"
           className="search-bar"
         />
 
-        {/* STORIES ROW */}
+        
         <div className="stories-row">
 
           <div className="story">
@@ -61,7 +60,7 @@ const Messages = () => {
 
         </div>
 
-        {/* MESSAGE LIST */}
+     
         <div className="messages-list">
 
           <div className="messages-title" position="fixed">
@@ -105,7 +104,7 @@ const Messages = () => {
       </div>
 
 
-      {/* RIGHT PANEL */}
+      
       <div className="messages-chat-area">
 
         <div className="chat-placeholder">
