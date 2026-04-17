@@ -9,7 +9,7 @@ function Suggestions() {
     fetch("https://gist.githubusercontent.com/Sanjay-krish-15/03d8ced30e80ac1a7d5f509ea56ba000/raw/f13bccab60ec6612c85c7b2d98b53e537ac4f5f8/db.json")
       .then((res) => res.json())
       .then((data) => {
-        console.log(data); // 👈 confirm suggestions exist
+        console.log(data); 
         setUsers(data.suggestions || []);
       })
       .catch((err) =>
@@ -20,7 +20,7 @@ function Suggestions() {
   return (
     <div className="suggestions">
 
-      {/* HEADER */}
+     
       <div className="suggestions-header">
         <span className="suggestions-title">
           Suggestions for you
@@ -31,7 +31,7 @@ function Suggestions() {
         </span>
       </div>
 
-      {/* USERS */}
+   
       {users.map((user) => (
         <div className="suggestion-row" key={user.id}>
 
