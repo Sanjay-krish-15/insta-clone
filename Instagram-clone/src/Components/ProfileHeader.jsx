@@ -11,7 +11,7 @@ function ProfileHeader() {
 
     <div className="row align-items-center">
 
-      {/* PROFILE IMAGE */}
+      
       <div className="col-12 col-md-4 text-center mb-3 mb-md-0 mt-5">
 
         <img
@@ -22,11 +22,9 @@ function ProfileHeader() {
 
       </div>
 
-
-      {/* PROFILE DETAILS */}
       <div className="col-12 col-md-8 text-center text-md-start" mt-8>
 
-        {/* USERNAME + SETTINGS */}
+  
         <div className="d-flex align-items-center justify-content-center justify-content-md-start gap-3">
 
           <h5 className=" User-name ">
@@ -38,7 +36,6 @@ function ProfileHeader() {
         </div>
 
 
-        {/* NAME */}
         <div className="mt-2 fw-bold">
 
           {user.name}

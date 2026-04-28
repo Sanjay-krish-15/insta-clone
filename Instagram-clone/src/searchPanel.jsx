@@ -4,12 +4,10 @@ import "./Styles/searchPanel.css";
 function SearchPanel({ isOpen, closeDropdown }) {
 
   const dropdownRef = useRef();
-
   const [query, setQuery] = useState("");
   const [users, setUsers] = useState([]);
   const [filteredUsers, setFilteredUsers] = useState([]);
 
-  // Fetch users once
   useEffect(() => {
     fetch(
       "https://gist.githubusercontent.com/Sanjay-krish-15/03d8ced30e80ac1a7d5f509ea56ba000/raw/f13bccab60ec6612c85c7b2d98b53e537ac4f5f8/db.json"
@@ -18,7 +16,6 @@ function SearchPanel({ isOpen, closeDropdown }) {
       .then((data) => setUsers(data.posts));
   }, []);
 
-  // Outside click close
   useEffect(() => {
     const handleOutsideClick = (event) => {
       if (
@@ -37,7 +34,6 @@ function SearchPanel({ isOpen, closeDropdown }) {
       document.removeEventListener("mousedown", handleOutsideClick);
   }, [isOpen, closeDropdown]);
 
-  // Filter users
   useEffect(() => {
 
     if (query === "") {

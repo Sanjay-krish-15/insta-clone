@@ -16,13 +16,9 @@ import "./Styles/index.css";
 
 function App() {
 
-  const location = useLocation();
-
-  // PANEL STATES (overlay components)
+  const location = useLocation(); 
   const [searchOpen, setSearchOpen] = useState(false);
   const [notificationOpen, setNotificationOpen] = useState(false);
-
-  // PAGE DETECTION
   const isExplorePage = location.pathname.startsWith("/explore");
   const isProfilePage = location.pathname.startsWith("/profile");
   const isReelsPage = location.pathname.startsWith("/reels");
@@ -31,7 +27,6 @@ function App() {
   return (
     <div className="d-flex vh-100">
 
-      {/* SIDEBAR */}
         
       <div style={{ width: isMessagesPage ? "6%" : "12%" }}>
         <Sidebar
@@ -47,7 +42,6 @@ function App() {
         closeDropdown={() => setSearchOpen(false)}
       />
 
-
       
       <NotificationPanel
         isOpen={notificationOpen}
@@ -57,9 +51,7 @@ function App() {
 
       
       <MessageButton />
-
-
-      
+ 
       <div
         style={{
           width:
@@ -89,7 +81,6 @@ function App() {
       </div>
 
 
-      {/* SUGGESTIONS PANEL */}
       {!isExplorePage &&
         !isProfilePage &&
         !isMessagesPage &&

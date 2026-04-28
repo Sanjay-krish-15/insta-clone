@@ -16,23 +16,19 @@
 }
 
 
-/* each card must control its own size */
 .explore-card {
 
   position: relative;
 
   width: 100%;
 
-  aspect-ratio: 1 / 1;   /* keeps square like Instagram */
-
+  aspect-ratio: 1 / 1;  
   overflow: hidden;
 
   cursor: pointer;
 
 }
 
-
-/* image must fill card properly */
 .explore-card img {
 
   width: 100%;
@@ -45,8 +41,6 @@
 
 }
 
-
-/* overlay stays inside card only */
 .overlay {
 
   position: absolute;
@@ -81,8 +75,6 @@
 
 }
 
-
-/* hover works per card */
 .explore-card:hover .overlay {
 
   opacity: 1;

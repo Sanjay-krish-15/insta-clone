@@ -5,8 +5,6 @@ import SuggestionsFooter from "./SuggestionsFooter";
 function Suggestions() {
 
   const [users, setUsers] = useState([]);
-
-  // Your profile data (same as ProfileHeader)
   const currentUser = {
     username: "pixel.navigator_77",
     name: "Arvind Raj",
@@ -27,7 +25,6 @@ function Suggestions() {
   return (
     <div className="suggestions">
 
-      {/* PROFILE MINI HEADER */}
       <div className="suggestion-row profile-mini">
 
         <div className="suggestion-left" md-3>
@@ -53,8 +50,6 @@ function Suggestions() {
 
       </div>
 
-
-      {/* HEADER */}
       <div className="suggestions-header">
         <span className="suggestions-title">
           Suggestions for you
@@ -66,7 +61,6 @@ function Suggestions() {
       </div>
 
 
-      {/* USERS */}
       {users.map((user) => (
         <div className="suggestion-row" key={user.id}>
 

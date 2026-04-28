@@ -14,9 +14,6 @@ export function useSidebarActions() {
 
   const goProfile = () => navigate("/profile");
 
-  // REMOVE fake route navigation for panels
-  // These should be controlled using state in App.jsx / Sidebar.jsx
-
   return {
     goHome,
     goExplore,

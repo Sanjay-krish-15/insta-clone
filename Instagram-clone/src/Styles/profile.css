@@ -13,7 +13,7 @@
 }
 
 
-/* HIGHLIGHTS */
+
 .highlight{
   .highlight {
   margin-top: 30px;
@@ -52,8 +52,6 @@
 }
 
 
-/* TAB BORDER */
-
 .profile-tabs {
 display: inline-flex;
 justify-content: flex-start;
@@ -62,8 +60,6 @@ gap: 165px;
 
 }
 
-
-/* CAMERA ICON */
 
 .camera-circle {
   
@@ -84,9 +80,6 @@ gap: 165px;
 .camera-circle i{
  margin-right: 0 !important;
 }
-
-
-/* SHARE LINK */
 
 .share-your-first-photo {
 
