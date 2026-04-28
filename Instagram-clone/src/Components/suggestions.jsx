@@ -1,15 +1,22 @@
 import React, { useEffect, useState } from "react";
-import "./suggestions.css";
+import "../Styles/suggestions.css";
+import SuggestionsFooter from "./SuggestionsFooter";
 
 function Suggestions() {
 
   const [users, setUsers] = useState([]);
 
+  // Your profile data (same as ProfileHeader)
+  const currentUser = {
+    username: "pixel.navigator_77",
+    name: "Arvind Raj",
+    profileImage: "https://i.pravatar.cc/150?img=12"
+  };
+
   useEffect(() => {
     fetch("https://gist.githubusercontent.com/Sanjay-krish-15/03d8ced30e80ac1a7d5f509ea56ba000/raw/f13bccab60ec6612c85c7b2d98b53e537ac4f5f8/db.json")
       .then((res) => res.json())
       .then((data) => {
-        console.log(data); // 👈 confirm suggestions exist
         setUsers(data.suggestions || []);
       })
       .catch((err) =>
@@ -20,6 +27,33 @@ function Suggestions() {
   return (
     <div className="suggestions">
 
+      {/* PROFILE MINI HEADER */}
+      <div className="suggestion-row profile-mini">
+
+        <div className="suggestion-left" md-3>
+
+          <img
+            src={currentUser.profileImage}
+            alt="profile"
+            className="suggestion-img"
+          />
+
+          <span className="suggestion-name">
+            {currentUser.username}
+            <div className="suggestion-reason">
+              {currentUser.name}
+            </div>
+          </span>
+
+        </div>
+
+        <button className="switch-button">
+          Switch
+        </button>
+
+      </div>
+
+
       {/* HEADER */}
       <div className="suggestions-header">
         <span className="suggestions-title">
@@ -27,9 +61,10 @@ function Suggestions() {
         </span>
 
         <span className="see-all">
-          See All
+          See all
         </span>
       </div>
+
 
       {/* USERS */}
       {users.map((user) => (
@@ -45,6 +80,9 @@ function Suggestions() {
 
             <span className="suggestion-name">
               {user.username}
+              <div className="suggestion-reason">
+                Suggested for you
+              </div>
             </span>
 
           </div>
@@ -55,8 +93,11 @@ function Suggestions() {
 
         </div>
       ))}
+      <div><SuggestionsFooter/></div>
 
     </div>
+
+
   );
 }
 

@@ -14,22 +14,14 @@ export function useSidebarActions() {
 
   const goProfile = () => navigate("/profile");
 
-  const openNotificationPanel = () => navigate("/NotificationPanel=true");
-
-  const goCreate = () => navigate("/create");
-
-  const openSearch = () => navigate("/explore?search=true");
-
-  const openMore = () => navigate("/MoreDropdown=true");
+  // REMOVE fake route navigation for panels
+  // These should be controlled using state in App.jsx / Sidebar.jsx
 
   return {
     goHome,
     goExplore,
     goMessages,
     goProfile,
-    goReels,
-    openNotificationPanel,
-    opensearchPanel: openSearch,
-    openMoreDropdown: openMore,
+    goReels
   };
 }

@@ -1,8 +1,7 @@
-/* Background wrapper */
 
 .reels-wrapper {
   height: 100vh;
-  width: 100%;
+  width: 96%;
 
   background-color: none;
 
@@ -11,13 +10,13 @@
 }
 
 
-/* Scroll container */
-
 .reels-container {
   height: 100vh;
   width: 400px;
+  position:absolute;
+  right: 505px;
 
-  overflow-y: scroll;
+  overflow-y: hidden;
 
   scroll-snap-type: y mandatory;
 
@@ -26,11 +25,9 @@
 }
 
 
-/* Each reel = full screen height */
-
 .reel-card {
   height: 100vh;
-  width: 100%;
+  width: 94%;
 
   position: relative;
 
@@ -41,9 +38,6 @@
   align-items: center;
 }
 
-
-/* Video fits inside 9:16 frame */
-
 .reel-card video {
   height: 100vh;
   width: 100%;
@@ -52,9 +46,6 @@
 
   border-radius: 18px;
 }
-
-
-/* Username + caption */
 
 .reel-info {
   position: absolute;
@@ -65,19 +56,16 @@
   display: flex;
 }
 
-
-/* Right-side action buttons */
-
 .reel-actions {
   position: absolute;
-  right: -250px;
-  bottom: 120px;
+  right: 475px;
+  bottom: 50px;
 
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 18px;
 
-  color: whitesmoke;
+  color: black;
   cursor: pointer;
   
 }
@@ -93,6 +81,45 @@
   bottom: 45px;
   right: -65px;
   
+}
 
+.scroll-btn {
+  position: fixed;
+  left: 95%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+  border: 0px  solid;
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.15);
+  
+
+  background: white;
+  color: gray;
+
+  font-size: 22px;
+  cursor: pointer;
+
+  z-index: 1000;
+
+  transition: 0.3s ease;
+}
+
+
+
+.up-btn {
+  top: 280px;
+ 
+}
+.up-btn i{
+  margin-right: 0 !important;
 
 }
+.down-btn i{
+  margin-right: 0 !important;
+
+}
+.down-btn {
+  bottom: 280px;
+  }

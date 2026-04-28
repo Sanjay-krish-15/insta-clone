@@ -12,7 +12,7 @@ function Posts() {
   }, []);
 
   return (
-    <div style={{ maxWidth: "500px", margin: "auto" }}>
+    <div style={{ maxWidth: "470px", marginLeft: "120px"  }}>
       {posts.length > 0 ? (
         posts.map((post) => (
           <div
@@ -36,7 +36,7 @@ function Posts() {
                 src={post.profilePic}
                 alt="profile"
                 className="rounded-circle"
-                style={{ width: "40px", height: "40px", marginRight: "10px" }}
+                style={{ width: "40px", height: "40px", marginRight: "10px",}}
               />
 
               <strong>{post.username}</strong>
@@ -46,7 +46,7 @@ function Posts() {
             <img
               src={post.postImage}
               alt="post"
-              style={{ width: "100%" }}
+              style={{ width: "100%",  }}
             />
 
             {/* Actions */}

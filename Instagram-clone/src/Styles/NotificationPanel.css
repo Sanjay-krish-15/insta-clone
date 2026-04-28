@@ -1,0 +1,243 @@
+.notification-panel {
+
+  position: fixed;
+
+  left: -450px;
+
+  top: 0;
+
+  width: 450px;
+
+  height: 100vh;
+
+  background: white;
+
+  transition: 0.3s ease;
+
+  z-index: 999;
+
+  overflow-y: auto;
+
+  border-right: 1px solid #ddd;
+
+  font-size:14px;
+
+  padding-left: 18px;
+
+ 
+
+}
+
+
+.notification-panel.open {
+
+  left: 0;
+
+}
+
+
+
+.panel-header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 20px;
+
+  font-size: 18px;
+
+  font-weight: 600;
+
+}
+
+
+.close-btn {
+
+  border: none;
+
+  background: none;
+
+  font-size: 20px;
+
+  cursor: pointer;
+
+}
+
+
+
+.filter-buttons {
+
+  display: flex;
+
+  gap: 10px;
+
+  padding: 0 20px 10px;
+
+}
+
+
+.filter-buttons button {
+
+  padding: 6px 14px;
+
+  border-radius: 20px;
+
+  border: none;
+
+  background: #efefef;
+
+  font-size: 13px;
+
+  cursor: pointer;
+
+}
+
+
+.filter-buttons .active {
+
+  background: #ddd;
+
+}
+
+
+
+.follow-summary {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-start;
+
+  padding: 12px 20px;
+
+  border-bottom: 1px solid #eee;
+
+
+}
+
+
+.blue-dot {
+
+  width: 8px;
+
+  height: 8px;
+
+  background: #0095f6;
+
+  border-radius: 50%;
+
+}
+
+
+                                                   
+
+.section-title {
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  padding: 20px;
+
+  color: #666;
+
+  margin-bottom:-1px;
+
+}
+
+
+
+
+.notification-card {
+
+  display: flex;
+
+  justify-content: flex-start;
+
+  align-items: center;
+
+  padding: 12px 20px;
+
+  border-bottom: 1px solid #f1f1f1;
+
+
+
+  
+
+}
+
+
+.notification-left {
+
+  display: flex;
+
+  gap: 8px;
+
+  align-items: center;
+
+}
+
+
+
+.profile-pic {
+
+  width: 40px;
+
+  height: 40px;
+
+  border-radius: 50%;
+
+  margin-right: 12px;
+
+}
+
+
+
+.confirm-btn {
+
+  background: #0095f6;
+
+  border: none;
+
+  color: white;
+
+  padding: 6px 8px;
+
+  border-radius: 6px;
+
+  margin-right: 5px;
+
+  margin-left: 12px;
+
+  cursor: pointer;
+
+}
+
+
+.delete-btn {
+
+  background: #efefef;
+
+  border: none;
+
+  padding: 6px 8px;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+
+}
+
+
+.bold {
+
+  font-weight: 600;
+  margin-right: 160px;
+  margin-bottom: -6px;
+  
+
+}

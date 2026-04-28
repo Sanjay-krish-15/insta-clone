@@ -1,0 +1,15 @@
+/* FOOTER TEXT */
+
+.base-text {
+
+  color: #747070;
+  font-size: x-small;
+
+}
+
+.base-text:hover {
+
+  text-decoration: underline;
+  cursor: pointer;
+
+}

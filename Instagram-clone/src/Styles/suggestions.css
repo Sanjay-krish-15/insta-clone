@@ -1,9 +1,10 @@
 .suggestions {
-  width: 300px;
+  width: 330px;
   padding: 15px;
   display:flex;
   flex-direction: column;
   flex-wrap: wrap;
+  justify-content: left;
 }
 
 /* HEADER */
@@ -15,52 +16,70 @@
 }
 
 .suggestions-title {
-  font-weight: bold;
-  color: gray;
+  font-weight: 525;
+  color: black;
   font-size: 14px;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 .see-all {
-  color: #0095f6;
-  font-weight: bold;
+  color: black;
+  font-weight: 600;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 12px;
 }
 
-/* USER ROW */
 .suggestion-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 12px;
+  margin-bottom: 17px;
+  
 }
 
-/* LEFT SIDE */
 .suggestion-left {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
-/* IMAGE */
+
 .suggestion-img {
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
 }
 
-/* NAME */
+
 .suggestion-name {
   font-size: 14px;
   font-weight: 500;
 }
 
-/* FOLLOW BUTTON */
+
 .follow-button {
   background-color: transparent;
   border: none;
-  color: #0095f6;
-  font-weight: bold;
+  color: #3143E3;
+  font-weight: 600;
   cursor: pointer;
   font-size: 13px;
+}
+
+.suggestion-reason {
+  font-size: 12px;
+  color: gray;
+}
+
+.profile-mini {
+  margin-bottom: 15px;
+}
+
+.switch-button {
+  border: none;
+  background: none;
+  color: #3143E3;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
 }

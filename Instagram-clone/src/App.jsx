@@ -1,48 +1,77 @@
-import React from "react";
+import React, { useState } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 
-import Sidebar from "./sidebar";
-import MainFeed from "./mainfeed";
-import Suggestions from "./suggestions";
-import Explore from "./explore";
-import Profile from "./profile";
-import Messages from "./Message";
+import Sidebar from "./Components/sidebar";
+import MainFeed from "./Pages/mainfeed";
+import Suggestions from "./Components/suggestions";
+import Explore from "./Pages/explore";
+import Profile from "./Pages/profile";
+import Messages from "./Pages/Message";
 import NotificationPanel from "./NotificationPanel";
-import CreateDropdown from "./Create";
-import MoreDropdown from "./MoreDropdown";
-import Reels from "./Reels";
+import SearchPanel from "./searchPanel";
+import Reels from "./Pages/Reels";
+import MessageButton from "./Components/messagebutton";
 
-import "./index.css";
+import "./Styles/index.css";
 
 function App() {
 
   const location = useLocation();
 
+  // PANEL STATES (overlay components)
+  const [searchOpen, setSearchOpen] = useState(false);
+  const [notificationOpen, setNotificationOpen] = useState(false);
+
+  // PAGE DETECTION
   const isExplorePage = location.pathname.startsWith("/explore");
   const isProfilePage = location.pathname.startsWith("/profile");
   const isReelsPage = location.pathname.startsWith("/reels");
   const isMessagesPage = location.pathname.startsWith("/messages");
-  const isNotificationPanel = location.pathname.startsWith("/NotificationPanel");
-
 
   return (
     <div className="d-flex vh-100">
 
-      {/* Sidebar always visible */}
-      <div style={{ width: "10%" }}>
-        <Sidebar />
+      {/* SIDEBAR */}
+        
+      <div style={{ width: isMessagesPage ? "6%" : "12%" }}>
+        <Sidebar
+          openSearch={() => setSearchOpen(true)}
+          openNotifications={() => setNotificationOpen(true)}
+        />
       </div>
 
-  
+
+      
+      <SearchPanel
+        isOpen={searchOpen}
+        closeDropdown={() => setSearchOpen(false)}
+      />
+
+
+      
+      <NotificationPanel
+        isOpen={notificationOpen}
+        closePanel={() => setNotificationOpen(false)}
+      />
+
+
+      
+      <MessageButton />
+
+
+      
       <div
         style={{
           width:
-            isExplorePage || isReelsPage || isMessagesPage || isProfilePage 
-              ? "80%"
-              : "60%",
+            isExplorePage ||
+            isReelsPage ||
+            isMessagesPage ||
+            isProfilePage
+              ? "90%"
+              : "50%",
         }}
       >
-        
+
         <Routes>
 
           <Route path="/" element={<MainFeed />} />
@@ -51,38 +80,28 @@ function App() {
 
           <Route path="/profile" element={<Profile />} />
 
-          <Route path="/notifications" element={<NotificationPanel />} />
-
           <Route path="/messages" element={<Messages />} />
 
           <Route path="/reels" element={<Reels />} />
 
         </Routes>
+
       </div>
 
 
-      {/* Suggestions Panel */}
+      {/* SUGGESTIONS PANEL */}
       {!isExplorePage &&
         !isProfilePage &&
         !isMessagesPage &&
         !isReelsPage && (
-          <div
-            style={{
-              width: "20%",
-              alignContent: "center",
-              padding: "20px",
-            }}
-          >
+
+          <div style={{ width: "40%", padding: "20px" }}>
             <Suggestions />
           </div>
+
         )}
-        
 
     </div>
-
-
-
-    
   );
 }
 

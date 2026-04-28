@@ -1,0 +1,157 @@
+.profile-img-big {
+
+  width: 150px;
+  height: 150px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+  margin-right: 0px;
+  margin-top: 35px;
+    
+
+}
+
+
+/* HIGHLIGHTS */
+.highlight{
+  .highlight {
+  margin-top: 30px;
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: center;
+}
+   
+  }
+
+.plus-icon{
+  font-size: 80px;
+  flex-direction: row;
+  text-align: center;   
+  color: darkgrey;
+  
+}
+.plus-icon i{
+ margin-right: 0 !important;
+}
+
+.highlight-circle:hover {
+
+  border-color: black;
+
+}
+
+
+.highlight-text {
+
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 40px;
+
+
+}
+
+
+/* TAB BORDER */
+
+.profile-tabs {
+display: inline-flex;
+justify-content: flex-start;
+border-bottom: 1px solid #333;
+gap: 165px;
+
+}
+
+
+/* CAMERA ICON */
+
+.camera-circle {
+  
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1.5px solid black;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  margin-top: 100px;
+
+}
+
+
+.camera-circle i{
+ margin-right: 0 !important;
+}
+
+
+/* SHARE LINK */
+
+.share-your-first-photo {
+
+  color: #0f18c7;
+
+}
+
+.share-your-first-photo:hover {
+
+  text-decoration: underline;
+  cursor: pointer;
+
+}
+
+.btn{
+  width: 330px;
+  height: 45px;
+  border-radius: 12px;
+  color:black;
+  font-size: medium;
+  background-color: #f0f2f5;
+  
+}
+
+.user-name{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bolder;
+  font-size: 24px;
+  margin-top: 36px;
+
+}
+
+.user{
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  margin: top 4px; ;
+
+}
+
+.audiance{
+  display: flex;
+  margin-top: 12px;
+  justify-content: center;
+  justify-content: flex-start;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  margin-bottom: 10px;
+  gap: 20px;
+
+}
+
+.text-secondary{
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.high{
+  display: -ms-flexbox;
+  width: fit-content;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+  
+}
+
+
+

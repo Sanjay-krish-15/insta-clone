@@ -1,0 +1,36 @@
+.scroll-btn {
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+
+.scroll-btn:hover {
+  background: #333;
+  transform: scale(1.1);
+}
+
+/* Sizes */
+
+.scroll-small {
+  width: 30px;
+  height: 30px;
+  font-size: 14px;
+}
+
+.scroll-medium {
+  width: 45px;
+  height: 45px;
+  font-size: 18px;
+}
+
+.scroll-large {
+  width: 60px;
+  height: 60px;
+  font-size: 22px;
+}

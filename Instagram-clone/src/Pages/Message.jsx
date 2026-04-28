@@ -1,4 +1,4 @@
-import "./Message.css";
+import "../Styles/Message.css";
 import React, { useEffect, useState } from "react";
 
 const Messages = () => {
@@ -31,7 +31,7 @@ const Messages = () => {
       <div className="messages-sidebar">
 
         <div className="sidebar-header">
-          <h3>.sanjay.krish.</h3>
+          <h4>pixel.navigator_77 </h4>
         </div>
 
         {/* SEARCH */}
@@ -64,8 +64,8 @@ const Messages = () => {
         {/* MESSAGE LIST */}
         <div className="messages-list">
 
-          <div className="messages-title" position="fixed">
-            <h3>Messages</h3>
+          <div className="messages-title" >
+            <h6>Messages</h6>
             <span>Requests</span>
           </div>
 
@@ -112,7 +112,7 @@ const Messages = () => {
 
           <div className="chat-icon"></div>
 
-          <h2>Your messages</h2>
+          <h5>Your messages</h5>
 
           <p>Send a message to start a chat.</p>
 

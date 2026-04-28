@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import "./explore.css";
-import SearchPanel from "./searchPanel";
+import "../Styles/explore.css";
+import SearchPanel from "../searchPanel";
 
 function Explore() {
 
@@ -16,7 +16,7 @@ function Explore() {
   return (
     <div>
 
-      <div><SearchPanel /></div>
+   
   
 
     

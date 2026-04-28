@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import "../Styles/story.css";
 function Stories() {
 
   const [stories, setStories] = useState([]);
@@ -12,21 +12,7 @@ function Stories() {
   }, []);
 
   return (
-    <div
-      style={{
-        display: "flex",
-        flexWrap: "nowrap",
-        flexDirection: "row",
-        overflowX: "auto",
-        gap: "15px",
-        padding: "15px",
-        border: "1px solid #ddd",
-        borderRadius: "8px",
-        backgroundColor: "white",
-        maxWidth: "100%",
-        margin: "auto",
-      }}
-    >
+    <div className="header" >
       {stories.map((story) => (
         <div
           key={story.id}
@@ -38,16 +24,10 @@ function Stories() {
           <img
             src={story.profilePic}
             alt={story.username}
-            style={{
-              width: "60px",
-              height: "60px",
-              borderRadius: "50%",
-              border: "3px solid green",
-              padding: "2px"
-            }}
+            className="img"
           />
 
-          <div style={{ fontSize: "12px", marginTop: "5px" }}>
+          <div className="name">
             {story.username}
           </div>
 

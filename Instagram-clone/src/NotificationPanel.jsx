@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./NotificationPanel.css";
+import "./Styles/NotificationPanel.css";
 
 function NotificationPanel({ isOpen, closePanel }) {
 
@@ -15,105 +15,95 @@ function NotificationPanel({ isOpen, closePanel }) {
       .then((res) => res.json())
       .then((data) => {
 
-        // FOLLOW REQUESTS
         setFollowRequests(data.posts);
 
-        // COMMENT MENTIONS
         const commentMentions = [];
 
         data.posts.forEach((post) => {
-
           post.comments.forEach((comment) => {
 
             commentMentions.push({
               username: comment.user,
               text: comment.text,
               time: post.time,
+              profilePic: post.profilePic
             });
 
           });
-
         });
 
         setMentions(commentMentions);
 
-        // DM ALERTS
         setDmAlerts(data.messages);
-
       });
 
   }, []);
 
   return (
-    <div className={`notification-panel  ${isOpen ? "open" : ""}`}>
+    <div className={`notification-panel ${isOpen ? "open" : ""}`}>
 
-      {/* HEADER */}
+     
       <div className="panel-header">
 
-        <h4>Notifications</h4>
+        <h2>Notifications</h2>
 
-        <button onClick={closePanel}>✖</button>
+        <button className="close-btn" onClick={closePanel}>
+          x
+        </button>
+
+      </div>
+  
+
+      <div className="filter-buttons">
+
+        <button className="active">All</button>
+
+        <button>Comments</button>
 
       </div>
 
-      {/* BODY */}
-      <div className="panel-body">
 
-        {/* FOLLOW REQUESTS */}
-        <h5>Follow Requests</h5>
+      <div className="follow-summary">
 
-        {followRequests.map((user) => (
+        <img
+          src={followRequests[0]?.profilePic}
+          alt="profile"
+          className="profile-pic"
+        />
 
-          <div className="notification-card" key={user.id}>
+        <div>
 
-            <div className="notification-left">
+          <p className="bold">Follow requests</p>
 
-              <img
-                src={user.profilePic}
-                alt="profile"
-                className="profile-pic"
-              />
+          <small>
+            {followRequests[0]?.username} + {followRequests.length - 1} others
+          </small>
 
-              <div>
+        </div>
 
-                <strong>{user.username}</strong>
+        <span className="blue-dot"></span>
 
-                <p>Requested to follow you</p>
+      </div>
 
-              </div>
 
-            </div>
 
-            <div>
+      <h4 className="section-title">This week</h4>
 
-              <button className="confirm-btn" >
+      {mentions.slice(0, 2).map((item, index) => (
 
-                Confirm
+        <div className="notification-card" key={index}>
 
-              </button>
+          <img
+            src={item.profilePic}
+            alt="profile"
+            className="profile-pic"
+          />
 
-              <button className="delete-btn">
+          <div>
 
-                Delete
+            <p className="mb-1">
 
-              </button>
-
-            </div>
-
-          </div>
-
-        ))}
-
-        {/* COMMENT MENTIONS */}
-        <h5>Mentions</h5>
-
-        {mentions.map((item, index) => (
-
-          <div className="notification-card" key={index}>
-
-            <p>
-
-              <strong>{item.username}</strong> commented: "{item.text}"
+              <strong>{item.username}</strong> commented: {item.text}
 
             </p>
 
@@ -121,16 +111,73 @@ function NotificationPanel({ isOpen, closePanel }) {
 
           </div>
 
-        ))}
+        </div>
 
-        {/* DM ALERTS */}
-        <h5>Messages</h5>
+      ))}
 
-        {dmAlerts.map((msg) => (
 
-          <div className="notification-card" key={msg.id}>
+      
 
-            <p>
+      <h4 className="section-title">This month</h4>
+
+      {followRequests.slice(0, 2).map((user) => (
+
+        <div className="notification-card" key={user.id}>
+
+          <div className="notification-left">
+
+            <img
+              src={user.profilePic}
+              alt="profile"
+              className="profile-pic"
+            />
+
+            <div>
+
+              <strong>{user.username}</strong>
+
+              <p>requested to follow you</p>
+
+            </div>
+
+          </div>
+
+          <div>
+
+            <button className="confirm-btn">
+
+              Confirm
+
+            </button>
+
+            <button className="delete-btn">
+
+              Delete
+
+            </button>
+
+          </div>
+
+        </div>
+
+      ))}
+
+
+    
+
+      {dmAlerts.slice(0, 2).map((msg) => (
+
+        <div className="notification-card" key={msg.id}>
+
+          <img
+            src={msg.profilePic}
+            alt="profile"
+            className="profile-pic"
+          />
+
+          <div>
+
+            <p className="mb-1">
 
               <strong>{msg.username}</strong>: {msg.lastMessage}
 
@@ -140,29 +187,81 @@ function NotificationPanel({ isOpen, closePanel }) {
 
           </div>
 
-        ))}
+        </div>
 
-        {/* MONTHLY SUMMARY */}
-        <div className="monthly-summary">
+      ))}
 
-          <h5>This Month</h5>
+      <h4 className="section-title">Earlier</h4>
 
-          <p>
+      {mentions.slice(3, 5).map((item, index) => (
 
-            Follow Requests: {followRequests.length}
+        <div className="notification-card" key={index}>
 
-          </p>
+          <img
+            src={item.profilePic}
+            alt="profile"
+            className="profile-pic"
+          />
 
-          <p>
+          <div>
 
-            Messages Received: {dmAlerts.length}
+            <p className="mb-1">
 
-          </p>
+              <strong>{item.username}</strong> commented: {item.text}
+
+            </p>
+
+            <small>{item.time}</small>
+
+          </div>
 
         </div>
 
-      </div>
+      ))}
 
+      {followRequests.slice(5, 9).map((user) => (
+
+        <div className="notification-card" key={user.id}>
+
+          <div className="notification-left">
+
+            <img
+              src={user.profilePic}
+              alt="profile"
+              className="profile-pic"
+            />
+
+            <div>
+
+              <strong>{user.username}</strong>
+
+              <p>requested to follow you</p>
+
+            </div>
+
+          </div>
+
+          <div>
+
+            <button className="confirm-btn">
+
+              Confirm
+
+            </button>
+
+            <button className="delete-btn">
+
+              Delete
+
+            </button>
+
+          </div>
+
+        </div>
+
+      ))}
+
+     
     </div>
   );
 }

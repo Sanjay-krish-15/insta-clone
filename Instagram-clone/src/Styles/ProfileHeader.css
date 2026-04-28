@@ -1,0 +1,27 @@
+.profile-img-big {
+
+  width: 150px;
+
+  height: 150px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+ 
+
+}
+
+.profile-img-medium {
+    width: 40px;
+
+    height: 40px;
+    border-radius: 50%;
+}
+
+.User-name{
+ font-weight: bolder;
+ margin-bottom: 0%;
+ 
+
+}
